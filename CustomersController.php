@@ -7,8 +7,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class CustomersController extends Controller
-{   
-    
+{
+    //show data
+    public function show(){
+        return Customers::all();
+    }
+
+    public function detail($id){
+        
+    }
+    //show data end
+
     //add data
     public function store(Request $request) //store digunakna untuk menambah data
     {
@@ -44,4 +53,5 @@ class CustomersController extends Controller
     }
     //add data end
 
+    
 }
